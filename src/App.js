@@ -1,7 +1,7 @@
 import PersonInput from './components/PersonInput/PersonInput';
 import PersonsList from './components/PersonsList/PersonsList';
 import './App.css';
-import {useState} from 'react';
+import {useState, Fragment} from 'react';
 
 function App() {
 
@@ -14,10 +14,10 @@ function App() {
   };
 
   return (
-    <div>
+    <Fragment>
       <PersonInput onAddUser={addUserToList}/>
       <PersonsList users={usersList}/>
-    </div>
+    </Fragment>
   );
 }
 
